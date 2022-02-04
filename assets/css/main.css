@@ -11,7 +11,7 @@
 /* Base Elements */
 body{
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -26,7 +26,9 @@ header .logo {
     font-family: 'Arial Black', Times;
     font-size:40px;
 }
-
+a{
+    text-decoration: none;
+}
 header nav a{
     text-decoration: none;
     color: #AAA;
@@ -41,7 +43,7 @@ header nav a:hover{
 .first-movie{
     font-size:16px;
     background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/assets/img/capa-house.jpg);
-    height:400px;
+    height:600px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -80,5 +82,46 @@ header nav a:hover{
 }
 .btn i{
     margin-right: 8px;
+}
+
+.movie-box{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movies{
+    margin-top: 10px;
+}
+
+.carousel-movies .title{
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+}
+/* Responsiveness */
+
+@media screen and (max-width:768px){
+    header .container {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .btn{
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+
+
+@media screen and (min-width:1000px){
+    .description{
+        width: 50%;
+    }
+    .btn{
+        margin-bottom: 5px;
+        width: 300px;
+    }
 }
 
